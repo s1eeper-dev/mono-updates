@@ -1,0 +1,34 @@
+<!doctype html>
+<!-- MONO 소개 페이지 (0.5.4 — 설계 9-179) — 구글 OAuth 앱 게시에 필요한 홈페이지. 공개 저장소 s1eeper-dev/mono-updates 의 docs/ 로 올려 GitHub Pages 로 보임 -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MONO</title>
+<style>
+:root { --ink: #111; --sub: #555; --line: #ddd; --bg: #fff; }
+@media (prefers-color-scheme: dark) { :root { --ink: #eee; --sub: #aaa; --line: #333; --bg: #111; } }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.7 system-ui, -apple-system, 'Segoe UI', 'Malgun Gothic', sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 40px 16px 60px; }
+h1 { letter-spacing: .14em; border-bottom: 3px solid var(--ink); padding-bottom: 8px; margin: 0 0 20px; }
+h2 { font-size: 18px; margin: 28px 0 6px; }
+a { color: var(--ink); }
+code { font-size: 14px; padding: 0 4px; border: 1px solid var(--line); }
+.en { color: var(--sub); border-top: 1px solid var(--line); margin-top: 32px; padding-top: 12px; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<h1>MONO</h1>
+<p>MONO는 한 사람이 자기 Windows PC에서 쓰는 개인 일정 관리 프로그램입니다. 할 일·프로젝트·자료·시간 기록을 그 PC 안에 저장합니다.</p>
+
+<h2>구글 드라이브 연결</h2>
+<p>사용자가 직접 연결하면, 할 일·자료에 붙인 그림·파일(첨부)의 사본을 <b>사용자 본인의 구글 드라이브</b> ‘MONO 첨부’ 폴더에 두고, 사용자의 다른 PC에서 받아 옵니다.
+권한은 MONO가 만든 파일만 다루는 <code>drive.file</code> 하나이며, 드라이브의 다른 파일은 보지 않습니다.</p>
+
+<p><a href="privacy.html">개인정보처리방침</a></p>
+
+<p class="en">MONO is a personal schedule app for Windows, used by one person on their own PCs. If the user connects Google Drive, MONO stores copies of the user's attachments in a “MONO 첨부” folder in the user's own Google Drive so the user's other PCs can download them. MONO uses only the <code>drive.file</code> scope and never reads other Drive files. <a href="privacy.html">Privacy Policy</a></p>
+</main>
+</body>
+</html>
